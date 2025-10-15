@@ -1,0 +1,70 @@
+.almendra-regular {
+    font-family: "Almendra", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+body{
+    background-color:rgb(123, 123, 211);
+    font-size: 20px;
+    }
+h1 {
+    color:rgb(23, 23, 155);
+    margin-top: 50px;
+    text-align: center;
+    font-family:"Almendra",serif;
+  }
+ 
+ p {
+    color:rgb(23, 23, 155);
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-right: 60px;
+    font-family:"Almendra",serif;
+ } 
+ p2 { 
+    color:rgb(23, 23, 155);
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-right: 60px;
+    font-family:"Almendra",serif;
+ }
+ p3 { 
+    color:rgb(23, 23, 155);
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-right: 60px;
+    font-family:"Almendra",serif;
+ }
+.navbar {
+    list-style-type: none;
+    margin-top: 100px;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgb(23, 23, 155);
+    font-family:"Almendra",serif;
+  }
+    
+  
+
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+ 
+  .navbar a:hover {
+    background: #6951af;
+    color: black;
+  }
+  
+
+  .main {
+    margin-top: 100px; 
+  } 
