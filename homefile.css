@@ -1,5 +1,5 @@
 almendra-regular {
-    font-family: "Almendra", serif;
+    font-family: "Newsreader", serif;
     font-weight: 400;
     font-style: normal;
   }
@@ -7,7 +7,7 @@ body{
     background-color:rgb(123, 123, 211);
     margin-top: 100px;
     text-align: center;
-    font-family: "Almendra",serif;
+    font-family: "Newsreader",serif;
     font-size: 20px;
     
 }
@@ -16,14 +16,14 @@ h1{
     color:rgb(23, 23, 155);
     margin-top: 80px;
     text-align: center;
-    font-family: "Almendra",serif;
+    font-family: "Newsreader",serif;
     
 }
 p{
     color:rgb(23, 23, 155);
     margin-top: 30px;
     text-align: center;
-    font-family: "Almendra",serif;
+    font-family: "Newsreader",serif;
    
 }
 

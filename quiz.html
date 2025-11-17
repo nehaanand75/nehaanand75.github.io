@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interactive quiz</title>
+  <link rel="stylesheet" type="text/css" href="quiz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="navbar">
+    <a class="active" href="homefile.html">Home</a>
+    <a href="history.html">history</a>
+    <a href="significance.html">significance</a>
+    <a href="refandresources.html">references and resources</a>
+    <a href="keyconcepts.html">key concepts</a>
+    <a href="aboutfile.html">about me</a>
+   </style>
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Quiz</title>
+
+<link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+
+<h1>Quiz</h1>
+
+<form id="quizForm">
+
+    <!-- Fill in blank -->
+    <div class="question">
+        <h3>1. Fill in the blank:</h3>
+        <p>The first webserver created is? <strong>__________</strong>.</p>
+        <input type="text" name="q1" placeholder="Type your answer here">
+    </div>
+
+    <!-- question 2 -->
+    <div class="question">
+        <h3>2. Webservers process which type of requests?</h3>
+        <div class="options">
+            <label><input type="radio" name="q2" value="CPU"> CPU</label>
+            <label><input type="radio" name="q2" value="HTTP"> HTTP</label>
+            <label><input type="radio" name="q2" value="TLS"> TLS</label>
+        </div>
+    </div>
+
+    <!-- question 3 -->
+    <div class="question">
+        <h3>3. Which one is not a type of cloud platform to run web servers</h3>
+        <div class="options">
+            <label><input type="radio" name="q3" value="Microsoft Azure"> Microsoft Azure</label>
+            <label><input type="radio" name="q3" value="Amazon Web services"> Amazon Web services</label>
+            <label><input type="radio" name="q3" value="HTML"> HTML</label>
+        </div>
+    </div>
+
+    <!-- question 4 -->
+    <div class="question">
+        <h3>4.Transport Layer Security  is used for</h3>
+        <div class="options">
+            <label><input type="radio" name="q4" value="data protection"> data protection</label>
+            <label><input type="radio" name="q4" value="data security"> data security</label>
+            <label><input type="radio" name="q4" value="data integration"> data protection</label>
+        </div>
+    </div>
+
+    <!-- question 5 -->
+    <div class="question">
+        <h3>What is reason why cloud based web servers are preferred over self managed ones?</h3>
+        <div class="options">
+            <label><input type="checkbox" name="q5" value="cost efficiency"> cost efficiency</label>
+            <label><input type="checkbox" name="q5" value="More expensive"> More expensive</label>
+            <label><input type="checkbox" name="q5" value="More Labor"> More labor</label>
+        
+        </div>
+    </div>
+
+  <button type="button" onclick="gradeQuiz()">Submit Quiz</button>
+</form>
+
+<div id="results" class="result-box" style="display:none;"></div>
+
+<button id="resetBtn" onclick="resetQuiz()" style="display:none;"> Retake Quiz</button>
+
+<script>
+    const answers = {
+        q1: "CERN",
+        q2: "HTTP",
+        q3: "HTML",
+        q4:"data protection",
+        q5:"cost efficiency",
+    };
+
+    function gradeQuiz() {
+        const form = document.getElementById("quizForm");
+        let score = 0;
+        let total = Object.keys(answers).length;
+
+        let output = "<h3>Quiz Results</h3>";
+
+        
+        for (let q in answers) {
+            const userAnswer = form[q].value;
+            const correctAnswer = answers[q];
+
+            if (userAnswer === correctAnswer) {
+                score++;
+                output += `
+                    <div class="question-result correct">
+                        <b>${q.toUpperCase()}</b>: Correct 
+                        <br>Your answer: ${userAnswer}
+                    </div>`;
+            } else {
+                output += `
+                    <div class="question-result incorrect">
+                        <b>${q.toUpperCase()}</b>: Incorrect  
+                        <br>Your answer: ${userAnswer || "No answer selected"}
+                        <br>Correct answer: ${correctAnswer}
+                    </div>`;
+            }
+        }
+
+      //checking if the user passed
+        const passed = score >= Math.ceil(total * 0.5); 
+        output =
+            `<p class="${passed ? 'pass' : 'fail'}">You ${passed ? "Passed " : "Failed "}</p>` +
+            `<p><b>Score:</b> ${score} / ${total}</p>` +
+            output;
+
+        const resultsDiv = document.getElementById("results");
+        resultsDiv.innerHTML = output;
+        resultsDiv.style.display = "block";
+
+        // Show reset button
+        document.getElementById("resetBtn").style.display = "inline-block";
+    }
+
+    function resetQuiz() {
+        document.getElementById("quizForm").reset();
+        document.getElementById("results").style.display = "none";
+        document.getElementById("resetBtn").style.display = "none";
+    }
+</script>
+
+
+
+<script src="index.js"></script>
+</body>
+</html>

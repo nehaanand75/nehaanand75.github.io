@@ -8,21 +8,58 @@ body{
     font-size: 20px;
     }
 h1 {
-    color:rgb(23, 23, 155);
+    color:rgb(123, 123, 211);
     margin-top: 50px;
     text-align: center;
     font-family:"Newsreader",serif;
   }
  
  p {
-    color:rgb(23, 23, 155);
+    color:rgb(123, 123, 211);
     text-align: center;
     margin-top: 60px;
     margin-left: 50px;
     margin-right: 60px;
     font-family:"Newsreader",serif;
  } 
+ p2 { 
+    color:rgb(23, 23, 155);
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-right: 60px;
+    font-family:"Newsreader",serif;
+ }
+ p3 { 
+    color:rgb(23, 23, 155);
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-right: 60px;
+    font-family:"Newsreader",serif;
+ }
+ h3{
+  
+    color:rgb(123, 123, 211);
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-right: 60px;
+    font-family:"Newsreader",serif;
 
+ }
+ div{
+
+  
+    color:rgb(123, 123, 211);
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-right: 60px;
+    font-family:"Newsreader",serif;
+
+ }
+ 
 .navbar {
     list-style-type: none;
     margin-top: 100px;

@@ -1,5 +1,5 @@
 .almendra-regular {
-    font-family: "Almendra", serif;
+    font-family: "Newsreader", serif;
     font-weight: 400;
     font-style: normal;
   }
@@ -8,35 +8,35 @@ body{
     font-size: 20px;
     }
 h1 {
-    color:rgb(23, 23, 155);
+    color:rgb(123, 123, 211);
     margin-top: 50px;
     text-align: center;
-    font-family:"Almendra",serif;
+    font-family:"Newsreader",serif;
   }
  
- p {
-    color:rgb(23, 23, 155);
+ p1 {
+    color:rgb(123, 123, 211);
     text-align: center;
     margin-top: 60px;
     margin-left: 50px;
     margin-right: 60px;
-    font-family:"Almendra",serif;
+    font-family:"Newsreader",serif;
  } 
  p2 { 
-    color:rgb(23, 23, 155);
+    color:rgb(123, 123, 211);
     text-align: center;
     margin-top: 60px;
     margin-left: 50px;
     margin-right: 60px;
-    font-family:"Almendra",serif;
+    font-family:"Newsreader",serif;
  }
  p3 { 
-    color:rgb(23, 23, 155);
+    color:rgb(123, 123, 211);
     text-align: center;
     margin-top: 60px;
     margin-left: 50px;
     margin-right: 60px;
-    font-family:"Almendra",serif;
+    font-family:"Newsreader",serif;
  }
 .navbar {
     list-style-type: none;
@@ -44,7 +44,7 @@ h1 {
     padding: 0;
     overflow: hidden;
     background-color:rgb(23, 23, 155);
-    font-family:"Almendra",serif;
+    font-family:"Newsreader",serif;
   }
     
   
