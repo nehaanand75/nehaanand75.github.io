@@ -4,6 +4,7 @@
     font-style: normal;
 }
 
+
 body {
     background-color: rgb(123, 123, 211);
     margin: 0;
@@ -16,29 +17,23 @@ body {
 
 
 h1 {
-    color: rgb(23, 23, 155); /* restored */
+    color: rgb(23, 23, 155);
     margin-top: 80px;
     font-family: "Newsreader", serif;
 }
 
-.text-style-1,
-.text-style-2,
-.text-style-3 {
-    color: rgb(23, 23, 155); /* restored */
+p {
+    color: rgb(23, 23, 155);
     margin-top: 30px;
-    text-align: center;
+    font-family: "Newsreader", serif;
 }
 
-.text-style-1 { font-family: "Almendra", serif; }
-.text-style-2 { font-family: "Newsreader", serif; }
-.text-style-3 { font-family: "Newsreader", serif; }
-
-/*Navigation Bar*/
+/*Navigation Bar */
 .navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: rgb(23, 23, 155);
+    background-color: rgb(23, 23, 155); 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -47,8 +42,8 @@ h1 {
 .navbar a {
     display: block;
     padding: 14px 20px;
-    color: #f2f2f2;  /* original white */
     text-decoration: none;
+    color: #f2f2f2; 
     font-size: 18px;
 }
 
@@ -57,7 +52,7 @@ h1 {
     color: black;
 }
 
-/* Two-Column Layout */
+/*Two-Column Layout */
 .two-column {
     display: flex;
     gap: 20px;
@@ -69,13 +64,26 @@ h1 {
 .left,
 .right {
     flex: 1;
-    background: white; 
+    background: white;
     color: rgb(23, 23, 155); 
     padding: 20px;
     border-radius: 10px;
 }
-/* Tablet */
+
+
+.main {
+    margin-top: 60px;
+    padding: 20px;
+}
+
+/* Tablet  */
 @media (max-width: 768px) {
+
+    body {
+        padding-top: 60px;
+        font-size: 18px;
+    }
+
     .two-column {
         flex-direction: column;
         width: 95%;
@@ -86,26 +94,28 @@ h1 {
         padding: 12px;
         text-align: center;
     }
-
-    p, h3, div, .text-block-2, .text-block-3 {
-        margin: 40px 20px;
-    }
 }
 
-/* Mobile */
+/* Mobile Screens */
 @media (max-width: 480px) {
+
     h1 {
-        font-size: 28px;
-        margin: 40px 10px;
+        font-size: 26px;
     }
 
-    p, h3, div, .text-block-2, .text-block-3 {
-        margin: 30px 10px;
-        font-size: 16px;
+    p {
+        font-size: 18px;
     }
 
-    .navbar a {
-        font-size: 16px;
-        padding: 10px;
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    form input,
+    form select,
+    form button {
+        font-size: 15px;
     }
 }

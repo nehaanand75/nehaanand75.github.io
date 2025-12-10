@@ -22,34 +22,64 @@ h1 {
     margin-right: 60px;
     font-family:"Newsreader",serif;
  } 
-
 .navbar {
     list-style-type: none;
-    margin-top: 100px;
+    margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color:rgb(23, 23, 155);
-    font-family:"Newsreader",serif;
-  }
-    
-  
+    background-color: rgb(23, 23, 155); 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-  .navbar a {
-    float: left;
+.navbar a {
     display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
+    padding: 14px 20px;
+    color: #f2f2f2;  
     text-decoration: none;
-  }
-  
- 
-  .navbar a:hover {
+    font-size: 18px;
+}
+
+.navbar a:hover {
     background: #6951af;
     color: black;
-  }
-  
+}
 
-  .main {
+.main {
     margin-top: 100px; 
   } 
+  /* Tablet */
+@media (max-width: 768px) {
+    .two-column {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .navbar a {
+        width: 100%;
+        padding: 12px;
+        text-align: center;
+    }
+
+    p, h3, div, .text-block-2, .text-block-3 {
+        margin: 40px 20px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+        margin: 40px 10px;
+    }
+
+    p, h3, div, .text-block-2, .text-block-3 {
+        margin: 30px 10px;
+        font-size: 16px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
